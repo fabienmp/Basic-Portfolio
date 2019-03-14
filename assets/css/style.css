@@ -12,19 +12,28 @@ a {
     color: #777777;
 }
 
-p
-{
-    line-height: 1.5em;
+p {
+    line-height: 2.5em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+table td {
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #ffffff;
+    font-weight: normal;
 }
 
 
@@ -54,8 +63,7 @@ footer {
     text-align: center;
 }
 
-.footer_label
-{
+.footer_label {
     margin: 0px;
     position: relative;
     top: 50%;
@@ -68,8 +76,7 @@ footer {
     display: table;
 }
 
-#separator
-{
+#separator {
     margin-bottom: 30px;
 }
 
@@ -86,6 +93,12 @@ li {
 
 .imgHolder {
     position: relative;
+    transition: 2s;
+}
+
+.imgHolder:hover
+{
+    opacity:0.5;
 }
 
 .imgHolder span {
@@ -95,6 +108,7 @@ li {
     bottom: 20px;
     color: white;
     background-color: #4aaaa5;
+    transition:all 2s linear;
 }
 
 input {
@@ -105,19 +119,29 @@ input {
 
 textarea {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 button {
     background-color: #4aaaa5;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 35px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    transition:all 2s ease;
+}
+
+button:hover
+{
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+    border-radius:50%;
 }
 
 html,
@@ -126,8 +150,7 @@ body {
     margin: 0;
 }
 
-.page_content
-{
+.page_content {
     padding: 30px;
 }
 
